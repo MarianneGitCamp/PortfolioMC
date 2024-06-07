@@ -1,0 +1,124 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Marianne Campguilhem" description="àà propose de Marianne Campguilhem ">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+	<Hero
+		title="À Propos"
+		tagline="Merci de votre visite. Lisez ci-dessous pour en savoir plus sur moi et mon parcours."
+	>
+		<img
+			width="1553"
+			height="873"
+			src="/assets/Fondcode.png"
+			alt="Marianne en train de travailler avec un collègue"
+		/>
+	</Hero>
+
+	<section>
+		<h2 class="section-title">Parcours</h2>
+		<div class="content">
+			<p>
+				Je m'appelle Marianne et je suis étudiante en développement web. Passionnée par les nouvelles technologies, 
+				j'aime apprendre et relever de nouveaux défis. Pour moi, le code représente l'avenir, car il permet de créer 
+				des solutions innovantes et de transformer des idées en réalité. 
+			</p>
+			<p>
+				Depuis que j'ai commencé à coder, j'ai développé des compétences en HTML, CSS, JavaScript et d'autres technologies 
+				modernes. Mon objectif est de continuer à apprendre et à m'améliorer pour devenir une développeuse accomplie et 
+				contribuer à des projets passionnants.
+			</p>
+			<p>
+				J'aime collaborer avec d'autres passionnés de technologie et partager mes connaissances. Chaque projet est une 
+				opportunité pour moi de grandir et de me perfectionner dans ce domaine dynamique et en constante évolution.
+			</p>
+		</div>
+	</section>
+			<section>
+				<h2 class="section-title">Education</h2>
+				<div class="content">
+					<p>Corporis voluptates tenetur laudantium.</p>
+				</div>
+			</section>
+			<section>
+	<h2 class="section-title">Compétences</h2>
+	<div class="content">
+		<ul>
+			<li>Développement Front-End (HTML, CSS, JavaScript)</li>
+			<li>Bases en Back-End (notions de Node.js, bases de données)</li>
+			<li>Adaptabilité et ouverture aux nouveaux défis</li>
+			<li>Travail en équipe et collaboration efficace</li>
+			<li>Compétences en résolution de problèmes et pensée analytique</li>
+			<li>Apprentissage continu et amélioration des compétences techniques</li>
+			<li>Création d'interfaces utilisateur réactives et conviviales</li>
+		</ul>
+	</div>
+</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
