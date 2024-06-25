@@ -1,8 +1,8 @@
 ---
-title: Duvet Genius
+title: Portfolio Architecte
 publishDate: 2024-01-04 00:00:00
 img: /assets/SophieBluel.png
-img_alt: Portfolio de Sophie Bleul architecthe 
+img_alt: Portfolio de Sophie Bleul architecte 
 description: |
   Dynamisation et ajout de fonctionnalité au site Portfolio de Sophie Bluel Architechte .
 tags:
