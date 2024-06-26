@@ -1,7 +1,7 @@
 ---
 title: Booki
 publishDate: 2023-10-01 00:00:00
-img: /assets/Booki.png
+img: /PortfolioMC/assets/Booki.png
 img_alt: Image du site de location saisonière Booki
 description: |
   Réalisation d'un site de location saisonnière 

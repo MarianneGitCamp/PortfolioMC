@@ -1,7 +1,7 @@
 ---
 title: Mon Vieux Grimoire 
 publishDate: 2020-03-02 00:00:00
-img: /assets/Grimoire.png
+img: /PortfolioMC/assets/Grimoire.png
 img_alt: photo du site mon grimoire 
 description: |
   Réalisation du Backend d'un site de notation de livres
